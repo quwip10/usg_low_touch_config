@@ -8,7 +8,7 @@ count=0
 
 while [ $variv -a $count -lt 100 ]
 do
-	if ping -c 1 -w 1 192.168.1.1 &> /dev/null;
+	if ping -c 1 -w 1 192.168.1.20 &> /dev/null;
 	then
 		mca-cli-op set-inform http://YOURIPHERE:8080/inform
 		sleep 5
@@ -21,6 +21,5 @@ done
 
 if ! variv;
 then
-	rm /config/scripts/post-config.d/mv.sh
-	rm ./set-inform.sh
+	rm ./set-inform-switch.sh
 fi
