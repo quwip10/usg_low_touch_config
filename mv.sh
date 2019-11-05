@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 echo "Moving script!!!"
 sudo mv /config/scripts/post-config.d/set-inform.sh /config/scripts/set-inform.sh
 
