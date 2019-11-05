@@ -11,7 +11,7 @@ do
 	if ping -c 1 -w 1 192.168.1.1 &> /dev/null;
 	then
 		variv=true
-		mca-cli-op set-inform http://atlasalex.duckdns.org:8080/inform
+		mca-cli-op set-inform http://YOURIPHERE:8080/inform
 		sleep 5
 		((count++))
 	else
