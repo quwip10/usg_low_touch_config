@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #simple script to set-inform repeatedly then delete
 #also has a count test in case of failure that will end after 1000 tries
 #In event of success (or failure) this script self-deletes
